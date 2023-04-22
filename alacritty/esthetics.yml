@@ -1,0 +1,78 @@
+colors:
+  primary:
+    background: "#0e0d0d" # base
+    foreground: "#f5f0f0" # text
+    # Bright and dim foreground colors
+    dim_foreground: "#f5f0f0" # text
+    bright_foreground: "#f5f0f0" # text
+
+  # Cursor colors
+  cursor:
+    text: "#1E1E2E"
+    cursor: "#fffefe"
+  vi_mode_cursor:
+    text: "#1E1E2E"
+    cursor: "#98e342"
+
+  # Search colors
+  search:
+    matches:
+      foreground: "#1E1E2E" # base
+      background: "#A6ADC8" # subtext0
+    focused_match:
+      foreground: "#1E1E2E" # base
+      background: "#A6E3A1" # green
+    footer_bar:
+      foreground: "#1E1E2E" # base
+      background: "#A6ADC8" # subtext0
+
+  # Keyboard regex hints
+  hints:
+    start:
+      foreground: "#1E1E2E" # base
+      background: "#F9E2AF" # yellow
+    end:
+      foreground: "#1E1E2E" # base
+      background: "#A6ADC8" # subtext0
+
+  # Selection colors
+  selection:
+    text: "#1E1E2E" # base
+    background: "#cfad00"
+
+  # Normal colors
+  normal:
+    black: "#000000" # surface1
+    red: "#d71e00" # red
+    green: "#5da602" # green
+    yellow: "#cfad00" # yellow
+    blue: "#417ab3" # blue
+    magenta: "#88658d" # magenta
+    cyan: "#00a7aa" # cyan
+    white: "#dbded8" # subtext1
+
+  # Bright colors
+  bright:
+    black: "#676965" # surface2
+    red: "#f44135" # red
+    green: "#98e342" # green
+    yellow: "#fcea60" # yellow
+    blue: "#83afd8" # blue
+    magenta: "#bc93b6" # magenta
+    cyan: "#37e5e7" # cyan
+    white: "#f1f1ef" # subtext0
+
+  # Dim colors
+  dim:
+    black: "#676965" # surface2
+    red: "#f44135" # red
+    green: "#98e342" # green
+    yellow: "#fcea60" # yellow
+    blue: "#83afd8" # blue
+    magenta: "#bc93b6" # magenta
+    cyan: "#37e5e7" # cyan
+    white: "#f1f1ef" # subtext0
+
+  indexed_colors:
+    - { index: 16, color: "#FAB387" }
+    - { index: 17, color: "#F5E0DC" }
