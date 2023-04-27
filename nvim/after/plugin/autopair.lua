@@ -10,7 +10,7 @@ npairs.setup({
     },
     disable_filetype = {"TelescopePrompt"},
     fast_wrap = {
-      map = '<M-e>',
+      map = '<C-w>',
       chars = { '{', '[', '(', '"', "'" },
       pattern = [=[[%'%"%>%]%)%}%,]]=],
       end_key = '$',
@@ -22,6 +22,5 @@ npairs.setup({
 
 })
 
-local ts_conds = require('nvim-autopairs.ts-conds')
 
 

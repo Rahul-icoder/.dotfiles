@@ -33,5 +33,4 @@ vim.opt.colorcolumn = "174"
 
 vim.g.mapleader = " "
 vim.g.mapleader = " "
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+vim.g.netrw_banner = 0

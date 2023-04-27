@@ -19,6 +19,8 @@ vim.keymap.set("n", "<leader>svwm", function()
     require("vim-with-me").StopVimWithMe()
 end)
 
+-- window 
+
 -- greatest remap ever
 vim.keymap.set("x", "<leader>p", [["_dP]])
 
@@ -50,3 +52,12 @@ vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
 end)
 
+-- Split window
+vim.keymap.set('n', 'ss', ':split<Return><C-w>w')
+vim.keymap.set('n', 'sv', ':vsplit<Return><C-w>w')
+
+-- Resize window
+vim.keymap.set('n', '<C-w>L', '<C-w><')
+vim.keymap.set('n', '<C-w>H', '<C-w>>')
+vim.keymap.set('n', '<C-w>J', '<C-w>+')
+vim.keymap.set('n', '<C-w>K', '<C-w>-')
