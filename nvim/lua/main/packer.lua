@@ -69,8 +69,9 @@ return require('packer').startup(function(use)
     -- Surround the word , line , character
     use('tpope/vim-surround')
     -- LSP Plugin
-    use('jose-elias-alvarez/null-ls.nvim')
-    use('jay-babu/mason-null-ls.nvim')
+    -- use('jose-elias-alvarez/null-ls.nvim')
+    -- use('jay-babu/mason-null-ls.nvim')
+    use("sbdchd/neoformat")
     use {
         'VonHeikemen/lsp-zero.nvim',
         branch = 'v1.x',
