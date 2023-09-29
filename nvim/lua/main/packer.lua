@@ -33,9 +33,6 @@ return require('packer').startup(function(use)
     -- Undo Tree Plugin
     use('mbbill/undotree')
 
-    -- Auto Tag
-    use('windwp/nvim-ts-autotag')
-
     -- git integration
     use('tpope/vim-fugitive')
 
@@ -47,12 +44,6 @@ return require('packer').startup(function(use)
     -- colorizer
     use('norcalli/nvim-colorizer.lua')
 
-    -- Auto Pair
-    use {
-        "windwp/nvim-autopairs",
-        config = function() require("nvim-autopairs").setup {} end
-    }
-
     -- lua-line
     use {
         'nvim-lualine/lualine.nvim',
@@ -63,14 +54,7 @@ return require('packer').startup(function(use)
     use('numToStr/Comment.nvim')
     use('JoosepAlviste/nvim-ts-context-commentstring')
 
-    -- Web Icons
-    use('nvim-tree/nvim-web-devicons')
-
-    -- Surround the word , line , character
-    use('tpope/vim-surround')
     -- LSP Plugin
-    -- use('jose-elias-alvarez/null-ls.nvim')
-    -- use('jay-babu/mason-null-ls.nvim')
     use("sbdchd/neoformat")
     use {
         'VonHeikemen/lsp-zero.nvim',
