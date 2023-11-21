@@ -54,8 +54,9 @@ return require('packer').startup(function(use)
     use('numToStr/Comment.nvim')
     use('JoosepAlviste/nvim-ts-context-commentstring')
 
+    -- formatting
+    use("jose-elias-alvarez/null-ls.nvim")
     -- LSP Plugin
-    use("sbdchd/neoformat")
     use {
         'VonHeikemen/lsp-zero.nvim',
         branch = 'v1.x',
