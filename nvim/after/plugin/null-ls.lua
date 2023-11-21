@@ -1,7 +1,6 @@
 local null_ls = require("null-ls")
-local formatting = null_ls.builtins
-local diagnostics = null_ls.diagnostics
-local completion = null_ls.completion
+local formatting = null_ls.builtins.formatting
+local completion = null_ls.builtins.completion
 null_ls.setup({
 	sources = {
 		formatting.stylua,
@@ -23,7 +22,7 @@ null_ls.setup({
 				callback = function()
 					-- on 0.8, you should use vim.lsp.buf.format({ bufnr = bufnr }) instead
 					-- on later neovim version, you should use vim.lsp.buf.format({ async = false }) instead
-					vim.lsp.buf.formatting_sync()
+					vim.lsp.buf.format()
 				end,
 			})
 		end
