@@ -4,7 +4,7 @@
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+    source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
 # If you come from bash you might have to change your $PATH.
@@ -119,32 +119,33 @@ alias ...="cd ../../"
 
 # Functions
 setGitUrl(){
-  exec git remote set-url origin $1
+    exec git remote set-url origin $1
 }
 
 gitPush(){
-  if [[ $# -ge 2 ]]; then
-     git add -A
-     git commit -m $2
-     git push origin $1
-  else
-    echo "provide branch name, commit message"
-  fi
+    if [[ $# -ge 2 ]]; then
+        git add -A
+        git commit -m $2
+        git push origin $1
+    else
+        echo "provide branch name, commit message"
+    fi
 }
 
 # GIT ALIAS
 
 alias gs="git status"
 alias gb="git branch"
-alias ga="git add -A"
 alias gl="git log"
+alias ga="git add -A"
+alias gc="git commit -m $1"
 alias "git-set-url"="setGitUrl $1"
 alias "gacp"="gitPush $1 $2"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 
-#IDE 
+#IDE
 alias ide="tmux split-window -v -p 50;  tmux split-window -h -p 50;"
 
 
