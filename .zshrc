@@ -139,6 +139,9 @@ alias gb="git branch"
 alias gl="git log"
 alias ga="git add -A"
 alias gc="git commit -m $1"
+alias gpush="git push origin $1"
+alias gpull="git pull origin $1"
+
 alias "git-set-url"="setGitUrl $1"
 alias "gacp"="gitPush $1 $2"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
