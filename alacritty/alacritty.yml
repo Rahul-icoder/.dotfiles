@@ -4,7 +4,7 @@ window:
   padding:
     x: 10
     y: 10
-  opacity: 0.60
+  opacity: 0.85
   startup_mode: SimpleFullscreen
 
 # scrolling history track terminal output and multiplier helps to scroll fast
