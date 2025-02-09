@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/Users/rahulkumar/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?.lua;/Users/rahulkumar/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?/init.lua;/Users/rahulkumar/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?.lua;/Users/rahulkumar/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/Users/rahulkumar/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/lua/5.1/?.so"
+local package_path_str = "/Users/rahulkumar/.cache/nvim/packer_hererocks/2.1.1736781742/share/lua/5.1/?.lua;/Users/rahulkumar/.cache/nvim/packer_hererocks/2.1.1736781742/share/lua/5.1/?/init.lua;/Users/rahulkumar/.cache/nvim/packer_hererocks/2.1.1736781742/lib/luarocks/rocks-5.1/?.lua;/Users/rahulkumar/.cache/nvim/packer_hererocks/2.1.1736781742/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/Users/rahulkumar/.cache/nvim/packer_hererocks/2.1.1736781742/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -118,6 +118,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/rahulkumar/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
+  },
+  ["gruvbox.nvim"] = {
+    loaded = true,
+    path = "/Users/rahulkumar/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
+    url = "https://github.com/ellisonleao/gruvbox.nvim"
   },
   harpoon = {
     loaded = true,
@@ -195,12 +200,6 @@ _G.packer_plugins = {
     path = "/Users/rahulkumar/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
-  ["rose-pine"] = {
-    config = { "\27LJ\2\n9\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\26colorscheme rose-pine\bcmd\bvim\0" },
-    loaded = true,
-    path = "/Users/rahulkumar/.local/share/nvim/site/pack/packer/start/rose-pine",
-    url = "https://github.com/rose-pine/neovim"
-  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/Users/rahulkumar/.local/share/nvim/site/pack/packer/start/telescope.nvim",
@@ -219,10 +218,6 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: rose-pine
-time([[Config for rose-pine]], true)
-try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\26colorscheme rose-pine\bcmd\bvim\0", "config", "rose-pine")
-time([[Config for rose-pine]], false)
 -- Config for: oil.nvim
 time([[Config for oil.nvim]], true)
 try_loadstring("\27LJ\2\nù\1\0\0\t\0\n\1\0166\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\3\0006\3\3\0009\3\4\0039\3\5\3'\5\6\0'\6\a\0'\a\b\0005\b\t\0B\3\5\0?\3\0\0B\0\2\1K\0\1\0\1\0\1\tdesc\26Open parent directory\17<CMD>Oil<CR>\6-\6n\bset\vkeymap\bvim\nsetup\boil\frequire\3ÄÄ¿ô\4\0", "config", "oil.nvim")

@@ -113,8 +113,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias mushin="cd ~/Workspace/mushinlabs"
 alias script="cd ~/Workspace/script"
-alias ..="cd .."
-alias ...="cd ../../"
+
 
 
 # Functions
